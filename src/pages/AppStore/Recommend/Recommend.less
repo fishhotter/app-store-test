@@ -1,0 +1,55 @@
+.scroll-container{
+    height: auto;
+    // min-height: 2.1rem;
+    width: 100%;
+    padding: 44px 0 .2rem .2rem;
+    border-bottom: 1px solid rgb(236, 236, 237);
+    .recommendation{
+        .title{
+            height: .5rem;
+            line-height: .5rem;
+            font-weight: 600;
+        }
+        .section-container{
+            height: 100%;
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            .wrap-scroll-x{
+                display: flex;
+                width: auto;
+                flex-wrap: nowrap;
+                padding-right: .1rem;
+                .section-item{
+                    margin-right: .15rem;
+                    font-size: .14rem;
+                    width: 0.5rem;
+                    // &:last-of-type{
+                    //     margin-right: 0;
+                    // }
+                    .section-image{
+                        width: .5rem;
+                        border-radius: .15rem;
+                    }
+                    .pic-name{
+                        width: 100%;
+                        text-align: left;
+                        word-break:break-all; 
+                        line-height: .16rem;
+                        height: .32rem;
+                        .t-ellipsis;
+                        // line-height: .16rem;
+                        margin: .1rem 0 .05rem;
+                    }
+                    .pic-category{
+                        width: 100%;
+                        color: #666;
+                        text-align: left;
+                        .ellipsis;
+                    }
+                }
+            }
+        }
+    }
+
+}
